@@ -1,0 +1,70 @@
+{
+	"_version": "1.14.0",
+	"sap.app": {
+		"id": "card.explorer.donut.card",
+		"type": "card",
+		"title": "Sample of a Donut Chart",
+		"subTitle": "Sample of a Donut Chart",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"shortTitle": "A short title for this Card",
+		"info": "Additional information about this Card",
+		"description": "A long description for this Card",
+		"tags": {
+			"keywords": [
+				"Analytical",
+				"Sample"
+			]
+		}
+	},
+	"sap.ui": {
+		"technology": "UI5",
+		"icons": {
+			"icon": "sap-icon://donut-chart"
+		}
+	},
+	"sap.card": {
+		"type": "Analytical",
+		"header": {
+			"title": "Service Tickets by Priority"
+		},
+		"content": {
+			"chartType": "Donut",
+			"legend": {
+				"visible": true,
+				"position": "Bottom",
+				"alignment": "Center"
+			},
+			"plotArea": {
+				"dataLabel": {
+					"visible": true,
+					"showTotal": true
+				}
+			},
+			"title": {
+				"text": "Donut chart",
+				"visible": false,
+				"alignment": "Left"
+			},
+			"measureAxis": "size",
+			"dimensionAxis": "color",
+			"data": {
+				"json": {},
+				"path": ""
+			},
+			"dimensions": [
+				{
+					"label": "Service Request Priority",
+					"value": "{Description}"
+				}
+			],
+			"measures": [
+				{
+					"label": "Service Requests Count",
+					"value": "{requestCount}"
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,137 @@
+{
+	"_version": "1.14.0",
+	"sap.app": {
+		"id": "card.explorer.stacked.column.card",
+		"type": "card",
+		"title": "Sample of a Stacked Column Chart",
+		"subTitle": "Sample of a Stacked Column Chart",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"shortTitle": "A short title for this Card",
+		"info": "Additional information about this Card",
+		"description": "A long description for this Card",
+		"tags": {
+			"keywords": [
+				"Analytical",
+				"Card",
+				"Stacked Column",
+				"Sample"
+			]
+		}
+	},
+	"sap.ui": {
+		"technology": "UI5",
+		"icons": {
+			"icon": "sap-icon://full-stacked-column-chart"
+		}
+	},
+	"sap.card": {
+		"type": "Analytical",
+		"header": {
+			"title": "Service Tickets by Status"
+		},
+		"content": {
+			"chartType": "StackedColumn",
+			"legend": {
+				"visible": true,
+				"position": "Bottom",
+				"alignment": "Center"
+			},
+			"plotArea": {
+				"dataLabel": {
+					"visible": false,
+					"showTotal": true
+				},
+				"categoryAxisText": {
+					"visible": false
+				},
+				"valueAxisText": {
+					"visible": false
+				}
+			},
+			"title": {
+				"text": "Stacked column chart",
+				"visible": false,
+				"alignment": "Left"
+			},
+			"measureAxis": "valueAxis",
+			"dimensionAxis": "categoryAxis",
+			"data": {
+				"json": {
+					"results": [
+						{
+							"Category": "Application",
+							"Open": 1,
+							"Progress": 0,
+							"Completed": 0,
+							"Closed": 0
+						},
+						{
+							"Category": "Customer Complaint",
+							"Open": 67,
+							"Progress": 19,
+							"Completed": 2,
+							"Closed": 1
+						},
+						{
+							"Category": "General Enquiry",
+							"Open": 3,
+							"Progress": 0,
+							"Completed": 0,
+							"Closed": 0
+						},
+						{
+							"Category": "HR General",
+							"Open": 2,
+							"Progress": 0,
+							"Completed": 0,
+							"Closed": 0
+						},
+						{
+							"Category": "HR General",
+							"Open": 2,
+							"Progress": 0,
+							"Completed": 0,
+							"Closed": 0
+						},
+						{
+							"Category": "HR Life Events",
+							"Open": 1,
+							"Progress": 1,
+							"Completed": 0,
+							"Closed": 0
+						},
+						{
+							"Category": "HR Performance Management",
+							"Open": 1,
+							"Progress": 1,
+							"Completed": 0,
+							"Closed": 0
+						},
+						{
+							"Category": "Not Specified",
+							"Open": 28,
+							"Progress": 3,
+							"Completed": 0,
+							"Closed": 0
+						}
+					]
+				},
+				"path": "/results"
+			},
+			"dimensions": [
+				{
+					"label": "Service Request Status",
+					"value": "{Description}"
+				}
+			],
+			"measures": [
+				{
+					"label": "Service Requests",
+					"value": "{requestCount}"
+				}
+			]
+		}
+	}
+}

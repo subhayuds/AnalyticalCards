@@ -1,0 +1,156 @@
+{
+	"_version": "1.14.0",
+	"sap.app": {
+		"id": "card.explorer.line.card",
+		"type": "card",
+		"title": "Sample of a Line Chart",
+		"subTitle": "Sample of a Line Chart",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"shortTitle": "A short title for this Card",
+		"info": "Additional information about this Card",
+		"description": "A long description for this Card",
+		"tags": {
+			"keywords": [
+				"Analytical",
+				"Card",
+				"Line",
+				"Sample"
+			]
+		}
+	},
+	"sap.ui": {
+		"technology": "UI5",
+		"icons": {
+			"icon": "sap-icon://line-chart"
+		}
+	},
+	"sap.card": {
+		"type": "Analytical",
+		"header": {
+			"title": "Service Tickets by Years and Months"
+		},
+		"content": {
+			"chartType": "Line",
+			"legend": {
+				"visible": "{legend/visible}",
+				"position": "{legend/position}",
+				"alignment": "{legend/alignment}"
+			},
+			"plotArea": {
+				"dataLabel": {
+					"visible": true
+				},
+				"categoryAxisText": {
+					"visible": true
+				},
+				"valueAxisText": {
+					"visible": true
+				}
+			},
+			"title": {
+				"text": "Line chart",
+				"visible": false,
+				"alignment": "Left"
+			},
+			"measureAxis": "valueAxis",
+			"dimensionAxis": "categoryAxis",
+			"data": {
+				"json": {
+					"dimensions": {
+						"monthLabel": "Month"
+					},
+					"measures": {
+						"Requests20": "2020",
+						"Requests19": "2019"
+					},
+					"legend": {
+						"visible": true,
+						"position": "Bottom",
+						"alignment": "Center"
+					},
+					"results": [
+						{
+							"Month": "JAN",
+							"RequestCount20": 100,
+							"RequestCount19": 50
+						},
+						{
+							"Month": "FEB",
+							"RequestCount20": 100,
+							"RequestCount19": 50
+						},
+						{
+							"Month": "MAR",
+							"RequestCount20": 100,
+							"RequestCount19": 50
+						},
+						{
+							"Month": "APR",
+							"RequestCount20": 100,
+							"RequestCount19": 50
+						},
+						{
+							"Month": "MAY",
+							"RequestCount20": 100,
+							"RequestCount19": 50
+						},
+						{
+							"Month": "JUN",
+							"RequestCount20": 100,
+							"RequestCount19": 50
+						},
+						{
+							"Month": "JUL",
+							"RequestCount20": 100,
+							"RequestCount19": 50
+						},
+						{
+							"Month": "AUG",
+							"RequestCount20": 100,
+							"RequestCount19": 50
+						},
+						{
+							"Month": "SEP",
+							"RequestCount20": 100,
+							"RequestCount19": 50
+						},
+						{
+							"Month": "OCT",
+							"RequestCount20": 100,
+							"RequestCount19": 50
+						},
+						{
+							"Month": "NOV",
+							"RequestCount20": 100,
+							"RequestCount19": 50
+						},
+						{
+							"Month": "DEC",
+							"RequestCount20": 100,
+							"RequestCount19": 50
+						}
+					]
+				},
+				"path": "/results"
+			},
+			"dimensions": [
+				{
+					"label": "{dimensions/monthLabel}",
+					"value": "{Month}"
+				}
+			],
+			"measures": [
+				{
+					"label": "{measures/Requests20}",
+					"value": "{RequestCount20}"
+				},
+				{
+					"label": "{measures/Requests19}",
+					"value": "{RequestCount19}"
+				}
+			]
+		}
+	}
+}
